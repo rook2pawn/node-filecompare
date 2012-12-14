@@ -1,0 +1,15 @@
+{
+    "name": "filecompare",
+    "version": "0.0.1",
+    "description": "asynchronous file compare",
+    "main": "index.js",
+    "scripts": {
+        "test": "tap test"
+    },
+    "repository": "git@github.com:rook2pawn/node-filecompare.git",
+    "author": "",
+    "license": "BSD",
+    "dependencies": {
+        "buffertools": ""
+    }
+}
