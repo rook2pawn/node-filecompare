@@ -1,10 +1,8 @@
 var fc = require('../');
 
-fc('a.txt','b.txt',{
-    success:function() {
+fc('a.txt','b.txt',function(isEqual) {
+    if (isEqual) 
         console.log("Equals.");
-    },
-    failure:function() {
+    else 
         console.log("not equals.");
-    }
 });
