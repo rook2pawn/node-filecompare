@@ -1,6 +1,6 @@
 {
     "name": "filecompare",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "asynchronous file compare",
     "main": "index.js",
     "scripts": {
