@@ -10,6 +10,6 @@
     "author": "",
     "license": "BSD",
     "dependencies": {
-        "buffertools": ""
+        "buffertools": "~1"
     }
 }
