@@ -1,15 +1,18 @@
 {
-    "name": "filecompare",
-    "version": "0.0.2",
-    "description": "asynchronous file compare",
-    "main": "index.js",
-    "scripts": {
-        "test": "tap test"
-    },
-    "repository": "git@github.com:rook2pawn/node-filecompare.git",
-    "author": "",
-    "license": "BSD",
-    "dependencies": {
-        "buffertools": "~1"
-    }
+  "name": "filecompare",
+  "version": "0.0.3",
+  "description": "asynchronous file compare",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test"
+  },
+  "repository": "git@github.com:rook2pawn/node-filecompare.git",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "buffertools": ""
+  },
+  "devDependencies": {
+    "tape": "^2.14.0"
+  }
 }
