@@ -38,7 +38,7 @@ Tests
 Notes
 =====
 
-    In the test/test.js you will see I use path.join(__dirname,'myfile.txt'), but that won't be necessary for your project. Just supply the filenames relative to your script directory, example: 
+In the test/test.js you will see I use path.join(__dirname,'myfile.txt'), but that won't be necessary for your project. Just supply the filenames relative to your script directory, example: 
 
 
 myfile.js
@@ -53,4 +53,4 @@ Where a.txt resides alongside in the same directory as myfile.js and b.txt resid
     a.txt
     myfile.js
     foo
-      \__b.txt
+     \__b.txt
