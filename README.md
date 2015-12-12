@@ -1,6 +1,9 @@
+Example
+=======
+
     var fc = require('filecompare');
     var cb = function(isEqual) {
-        console.log("equal? :" + isEqual);
+      console.log("equal? :" + isEqual);
     }
     fc(path1,path1,cb);
     
@@ -30,4 +33,24 @@ This means if there is an unforseen process spike from some other processes, the
 Tests
 =====
 
-    tap test/
+    npm test
+
+Notes
+=====
+
+    In the test/test.js you will see I use path.join(__dirname,'myfile.txt'), but that won't be necessary for your project. Just supply the filenames relative to your script directory, example: 
+
+
+myfile.js
+
+    var fc = require('filecompare')
+    fc('a.txt','foo/b.txt',function(isEqual) {
+      console.log("isEqual?: " ,isEqual)
+    })
+
+Where a.txt resides alongside in the same directory as myfile.js and b.txt resides in a directory "foo" 
+
+    a.txt
+    myfile.js
+    foo
+      \__b.txt
