@@ -1,18 +1,19 @@
 {
   "name": "filecompare",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "asynchronous file compare",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
   },
   "repository": "git@github.com:rook2pawn/node-filecompare.git",
-  "author": "",
+  "author": "David Wee <rook2pawn@gmail.com> (http://rook2pawn.com)",
   "license": "BSD",
   "dependencies": {
     "buffertools": ""
   },
   "devDependencies": {
     "tape": "^2.14.0"
-  }
+  },
+  "keywords": ["comparison","compare", "file comparison"]
 }
