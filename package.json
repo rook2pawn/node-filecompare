@@ -13,7 +13,7 @@
     "buffertools": ""
   },
   "devDependencies": {
-    "tape": "^2.14.0"
+    "tape": ""
   },
   "keywords": ["comparison","compare", "file comparison"]
 }
