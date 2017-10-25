@@ -15,5 +15,9 @@
   "devDependencies": {
     "tape": ""
   },
-  "keywords": ["comparison","compare", "file comparison"]
+  "keywords": [
+    "comparison",
+    "compare",
+    "file comparison"
+  ]
 }
