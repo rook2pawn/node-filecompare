@@ -4,7 +4,6 @@ var path = require('path');
 
 test('when both files fit in first buffer', function(t) {
 
-
   test('test for equality',function(t) {
     t.plan(1);
     fc(path.join(__dirname,'file1.txt'),path.join(__dirname,'file3.txt'),function(isEqual) {
