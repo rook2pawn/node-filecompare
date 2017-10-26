@@ -15,7 +15,6 @@ Asynchronous file compare. Now using native Promises and native BufferTools (all
 
 # Example
 
-
     var fc = require('filecompare');
     var cb = function(isEqual) {
       console.log("equal? :" + isEqual);
@@ -27,6 +26,19 @@ Asynchronous file compare. Now using native Promises and native BufferTools (all
 * perfect for high stress systems
 * works with binary data
 * perfect for comparing very large files
+
+# Advanced usage
+
+### Specify read size and buffer size.
+  
+    var fc = require('filecompare');
+    var cb = function(isEqual) {
+      console.log("equal? :" + isEqual);
+    }
+    const readSize = 4096;
+    const bufferSize = 8192;
+    fc(path1,path1,cb,readSize, bufferSize);
+
 
 # Why is this useful? 
 
