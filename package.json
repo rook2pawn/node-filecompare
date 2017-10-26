@@ -9,9 +9,6 @@
   "repository": "git@github.com:rook2pawn/node-filecompare.git",
   "author": "David Wee <rook2pawn@gmail.com> (http://rook2pawn.com)",
   "license": "BSD",
-  "dependencies": {
-    "buffertools": ""
-  },
   "devDependencies": {
     "tape": ""
   },
