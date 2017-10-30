@@ -3,35 +3,25 @@
 const parseOpts = require('minimist');
 const fs = require('fs');
 const compare = require('../index.js');
+const lib = require('../lib/index.js');
 
-const opts = parseOpts(process.argv.slice(2), {});
+const opts = parseOpts(process.argv.slice(2), {
+        alias: { s: 'use-stream', p : 'use-promise' },
+        boolean: ['use-stream', 'use-promise'],
+        default: { 'use-stream': false, 'use-promise': true }
+});
+const useStream = opts.s;
 const files = opts._;
 
-const checkFiles = function(list, cb) {
-	if ((!list.length) || (list.length != 2)) {
-		cb("File list not valid");
-	}
-  try {
-
-    fs.accessSync(list[0]);
-    fs.accessSync(list[1]);
-
-  } catch (e) {
-    return cb(e);
-  }
-  return cb(null,list[0],list[1]);
-
-}
-
-checkFiles(files,function(err, file1, file2) {
+lib.checkFiles(files,function(err, file1, file2) {
   if (err) {
     console.log(err);
     process.exitCode = 1;
   }
 
-  compare(file1,file2,function(isEqual) {
+  const type = useStream ? 'streams' : 'promises'; 
+  compare({type:type, path1:file1, path2: file2, cb : function(isEqual) {
     console.log("isEqual?",isEqual);
     process.exitCode = 0;
-  });
-
+  }});
 })
