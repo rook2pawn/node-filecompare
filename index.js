@@ -1,5 +1,4 @@
 const lib = require('./lib');
-const path = require('path');
 
 const compare = function (path1,path2,cb,step,bufferSize) {
 

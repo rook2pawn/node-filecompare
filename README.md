@@ -7,7 +7,7 @@ Asynchronous file compare. Now using native Promises and native BufferTools (all
 
 # install
 
-    npm install
+    npm install --save filecompare
 
 # test
 
@@ -20,6 +20,13 @@ Asynchronous file compare. Now using native Promises and native BufferTools (all
       console.log("equal? :" + isEqual);
     }
     fc(path1,path1,cb);
+
+# command line usage
+
+    npm install -g filecompare
+
+    filecompare a.txt b.txt
+  
     
 # Features
 
@@ -48,3 +55,7 @@ Each step is independently asynchronous yet only steps forward after confirming
 buffers are identical. 
 
 This means if there is an unforseen process spike from some other processes, the file compare will exscuse itself until CPU load becomes more available. This means you can compare arbitrarily sized multi-gigabyte files all the time without worry about locking up the computer.
+
+# LICENSE
+
+MIT 
